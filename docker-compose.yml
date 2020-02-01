@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ../../
+      dockerfile: docker/production/Dockerfile
+    image: app_prd
+    volumes:
+      - ./:/www
+      - ./supervisord.conf:/etc/supervisord.conf:ro
+      - ./entrypoint:/entrypoint:ro
+    env_file:
+      - ../../.env
+    command: /entrypoint

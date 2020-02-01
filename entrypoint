@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# install requirements
+pip install -r /www/requirements
+
+# run migrations
+python /www/manage.py migrate --noinput
+
+# run collectstatic
+python /www/manage.py collectstatic --noinput
+
+# run supervisord
+supervisord --nodaemon --configuration /etc/supervisord.conf

@@ -21,8 +21,6 @@ RUN groupadd -g 1000 www && useradd -u 1000 -g www www
 RUN mkdir /www && touch /www/docker-volume-not-mounted && chown www:www /www
 WORKDIR /www
 
-RUN pip3 install --upgrade pip setuptools
-
 RUN apt autoremove -y
 
 # Supervisor will run gunicorn or celery

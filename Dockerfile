@@ -9,7 +9,7 @@ RUN apt update && \
     wget
 
 # Install AWS SSM
-RUN wget https://github.com/Droplr/aws-env/raw/befe6fa44ea508508e0bcd2c3f4ac9fc7963d542/bin/aws-env-linux-amd64 -O /bin/aws-env && \
+RUN wget https://github.com/Droplr/aws-env/raw/v0.4/bin/aws-env-linux-amd64 -O /bin/aws-env && \
   chmod +x /bin/aws-env
   
 # Install Supervisor

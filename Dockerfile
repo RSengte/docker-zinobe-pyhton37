@@ -29,4 +29,4 @@ RUN pip install virtualenv
 RUN apt-get autoremove -y
 
 # Supervisor will run gunicorn or celery
-CMD ["supervisord", "-n", "-c", "/etc/supervisord.conf"]
+CMD ["supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]

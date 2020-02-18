@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install requirements
-pip install -r /www/requirements
+pip install -r /www/requirements.txt
 
 # run migrations
 python /www/manage.py migrate --noinput

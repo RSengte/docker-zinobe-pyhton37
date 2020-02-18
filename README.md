@@ -44,6 +44,16 @@ group=www
 environment=LANG=en_US.UTF-8,LC_ALL=en_US.UTF-8
 ```
 
+## Using virtualenv (example)
+
+```bash
+# Make virtualenv
+virtualenv venv
+
+# Enable virtualenv
+source venv
+```
+
 # Docker compose (example)
 
 docker-compose.yml

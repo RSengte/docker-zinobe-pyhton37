@@ -13,7 +13,7 @@ RUN wget https://github.com/Droplr/aws-env/raw/v0.4/bin/aws-env-linux-amd64 -O /
   chmod +x /bin/aws-env
   
 # Install Supervisor
-RUN apt-get install -y supervisor && mkdir /etc/supervisor.d
+RUN apt-get install -y supervisor
 
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 
